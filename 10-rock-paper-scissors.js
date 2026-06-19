@@ -61,7 +61,7 @@ function playGame(playermove) {
     }
   }
   moves.innerHTML = `
-  You <img class="move-icon" src="${playermove}-emoji.png"> <img class="move-icon" src="${computerMove}-emoji.png"> Computer
+  You <img class="move-icon" src="Simple game/${playermove}-emoji.png"> <img class="move-icon" src="Simple game/${computerMove}-emoji.png"> Computer
   `;
   score.innerHTML = `Wins: ${scoreline.win}, Losses: ${scoreline.loss}, Ties: ${scoreline.tie}`
   localStorage.setItem('scoreline',JSON.stringify(scoreline));
