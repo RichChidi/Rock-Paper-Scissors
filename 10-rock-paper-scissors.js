@@ -12,18 +12,18 @@ function playGame(playermove) {
   const randomNum = Math.random();
   let computerMove = '';
   if (randomNum < 1 / 3 ) {
-    computerMove = 'Rock'
+    computerMove = 'rock'
   } else if (randomNum >= 1 / 3 && randomNum < 2 / 3) {
-    computerMove = 'Paper'
+    computerMove = 'paper'
   } else {
-    computerMove = 'Scissors'
+    computerMove = 'scissors'
   }
-  if (playermove === 'Rock'){
-    if (computerMove === 'Rock') {
+  if (playermove === 'rock'){
+    if (computerMove === 'rock') {
       result.innerHTML = 'Tie';
       scoreline.tie++;
     }
-    else if (computerMove === 'Paper') {
+    else if (computerMove === 'paper') {
       result.innerHTML = 'You lose';
       scoreline.loss++;
     }
@@ -32,12 +32,12 @@ function playGame(playermove) {
       scoreline.win++;
     }
   }
-  if (playermove === 'Paper'){
-    if (computerMove === 'Rock') {
+  if (playermove === 'paper'){
+    if (computerMove === 'rock') {
       result.innerHTML = 'You win';
       scoreline.win++;
     }
-    else if (computerMove === 'Paper') {
+    else if (computerMove === 'paper') {
       result.innerHTML = 'Tie';
       scoreline.tie++;
     }
@@ -46,12 +46,12 @@ function playGame(playermove) {
       scoreline.loss++;
     }
   }
-  if (playermove === 'Scissors'){
-    if (computerMove === 'Rock') {
+  if (playermove === 'scissors'){
+    if (computerMove === 'rock') {
       result.innerHTML = 'You lose';
       scoreline.loss++;
     }
-    else if (computerMove === 'Paper') {
+    else if (computerMove === 'paper') {
       result.innerHTML = 'You win';
       scoreline.win++;
     }
