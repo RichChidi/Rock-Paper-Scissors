@@ -34,6 +34,7 @@ button{
   display: flex;
   justify-content: center;
   align-items: center;
+  cursor: pointer;
 }
 .move-icon{
   width: 70px;
